@@ -9,14 +9,15 @@ const record = [
  
 //   Define a method  'superbowlWin'
 function  superbowlWin(arr) {
-    let item = arr.find(element => element.result === "W");
     
-    return item["year"];
+      const op = arr.find(element => element.result === "W");
+      // if (!op) {
+      //   // return op;
+      // }
+       return op && op.year;
 }       
-    
-
-
 // find the element based on the conditon 
 superbowlWin(record);
+
 
 
